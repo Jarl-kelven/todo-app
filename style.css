@@ -1,0 +1,190 @@
+:root {
+    --Bright-Blue: hsl(220, 98%, 61%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --Light-Grayish-Blue: hsl(233, 11%, 84%);
+    --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+    
+
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* setup for the dark mode */
+body.dark{
+    --Very-Light-Gray: hsl(235, 21%, 11%);
+    --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+    --Light-Grayish-Blue: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(233, 11%, 84%);
+
+}
+
+header.light-bg{
+    background-image: url(./images/bg-mobile-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 20px;
+}
+
+header.dark-bg{
+    background-image: url(./images/bg-mobile-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: aliceblue;
+    
+}
+
+.moon-icon,
+.sun-icon{
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sun-icon:hover,
+.moon-icon:hover{
+    color: rgba(240, 248, 255, 0.76);
+}
+
+.sun-icon{
+    display: none;
+}
+
+.input-section{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.input{
+    padding: 17px;
+    background-color: var(--Very-Light-Gray);
+    color: var(--Very-Dark-Grayish-Blue);
+    box-sizing: border-box;
+    border: none;
+    width: 75%;
+    border-radius: 5px;
+}
+
+.input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.save-btn{
+    cursor: pointer;
+    width: 18%;
+    padding: 17px;
+    border: 1px solid var(--Very-Light-Gray);
+    border-radius: 5px;
+    color: var(--Very-Light-Gray);
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--Bright-Blue);
+}
+
+.save-btn:hover{
+    background-color: rgba(54, 54, 214, 0.815);
+}
+
+.output-section{
+    width: 80%;
+    margin: auto;
+}
+
+.output{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.output-text{
+    outline: none;
+    color: var(--Very-Dark-Grayish-Blue);
+    background-color: var(--Very-Light-Gray);
+    padding: 17px;
+    box-sizing: border-box;
+    border: 1px solid var(--Dark-Grayish-Blue);
+    width: 85%;
+    border-radius: 5px;
+}
+
+.del-btn{
+    color: var(--Bright-Blue);
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.records-section{
+    font-size: 13px;
+    color: var(--Very-Dark-Grayish-Blue);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clear-btn:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+.attribution {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 750px) {
+    .input-section,
+    .output-section,
+    .records-section{
+        width: 700px;
+        
+    }
+
+    .top{
+        width: 700px;
+        margin: auto;
+    }
+
+    header.light-bg{
+        background-image: url(./images/bg-desktop-light.jpg);
+    }
+    
+    header.dark-bg{
+        background-image: url(./images/bg-desktop-dark.jpg);
+        
+    }
+}
