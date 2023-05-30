@@ -117,7 +117,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .output-text{
@@ -159,6 +159,8 @@ h2{
     color: var(--Very-Dark-Grayish-Blue);
     font-size: 11px;
     text-align: center;
+    position: relative;
+    top: 180px;
 }
 
 .attribution a {
