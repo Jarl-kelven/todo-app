@@ -109,7 +109,7 @@ h2{
 }
 
 .output-section{
-    width: 80%;
+    width: 86%;
     margin: auto;
 }
 
@@ -117,24 +117,48 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .output-text{
     outline: none;
+    margin-top: 15px;
     color: var(--Very-Dark-Grayish-Blue);
     background-color: var(--Very-Light-Gray);
     padding: 17px;
     box-sizing: border-box;
-    border: 1px solid var(--Dark-Grayish-Blue);
-    width: 85%;
+    border: 1px solid var(--Light-Grayish-Blue);
+    width: 77%;
     border-radius: 5px;
+}
+
+.output-text.strike{
+    text-decoration: line-through;
+}
+
+.output-text:focus{
+    border: 1px solid var(--Bright-Blue);
+}
+
+.edit-btn{
+    color: var(--Bright-Blue);
+    font-size: 21px;
+    margin-right: 8px;
+    cursor: pointer;
 }
 
 .del-btn{
     color: var(--Bright-Blue);
-    font-size: 27px;
+    font-size: 25px;
     cursor: pointer;
+    margin-left: 5px;
+}
+
+.save-icon{
+    color: var(--Bright-Blue);
+    font-size: 21px;
+    margin-right: 8px;
+    cursor: pointer;
+    display: none;
 }
 
 .records-section{
